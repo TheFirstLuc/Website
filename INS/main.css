@@ -67,3 +67,65 @@ a.name {
     text-decoration: none;
     color: white;
 }
+
+/*table*/
+.lebenslauf-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.lebenslauf-table th, .lebenslauf-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.lebenslauf-table th {
+    background-color: #f2f2f2;
+}
+
+.lebenslauf-table th[colspan="2"] {
+    text-align: center;
+}
+
+.lebenslauf-table th[rowspan], .lebenslauf-table td[rowspan] {
+    vertical-align: top;
+}
+
+/* form */
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.Zeugnisse, .Filme {
+    margin-bottom: 20px;
+}
+
+.Title {
+    font-weight: bold;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: dodgerblue;
+}
