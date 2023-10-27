@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    display: none;
+}
+
+main {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 10px;
+}
