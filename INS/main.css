@@ -1,3 +1,10 @@
+:root{
+    --background-color: #333;
+    --blue: #0087ca;
+    --dark-blue: #0040ca;
+    --red: #ff2828;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,12 +15,13 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: var(--background-color);
     color: white;
     padding: 10px 0;
     text-align: center;
 }
 
+/*nav hover*/
 nav.sites {
     margin-top: 10px;
 }
@@ -28,6 +36,54 @@ nav a:hover {
     color: dimgrey;
 }
 
+.hover-underline-animation-blue {
+    display: inline-block;
+    position: relative;
+    color: var(--blue);
+}
+
+.hover-underline-animation-blue::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-blue:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-underline-animation-red {
+    display: inline-block;
+    position: relative;
+    color: var(--red);
+}
+
+.hover-underline-animation-red::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--red);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-red:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 main {
     flex: 1;
     padding: 20px;
@@ -39,7 +95,7 @@ main * {
 }
 
 footer {
-    background-color: #333;
+    background-color: var(--background-color);
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -58,7 +114,7 @@ footer p {
 }
 
 h3 {
-    color: #333;
+    color: var(--background-color);
 }
 
 a.name {
@@ -117,7 +173,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 input[type="submit"] {
-    background-color: deepskyblue;
+    background-color: var(--blue);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -127,5 +183,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: dodgerblue;
+    background-color: var(--dark-blue);
 }
