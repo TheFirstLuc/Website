@@ -203,6 +203,34 @@ input[type="submit"]:hover {
 }
 
 /*feedback*/
+.feedback-form{
+    background-color: #dddddd;
+}
+
 .feedback-form > * {
     margin: 5px;
+}
+
+/* CSS-Stil für den Text-Input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+#aufmerksamkeit,
+#anrede,
+#alter {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Platzhaltertext im Text-Input-Stil */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="url"]::placeholder,
+input[type="password"]::placeholder {
+    color: #999; /* Farbe des Platzhaltertexts setzen */
 }
