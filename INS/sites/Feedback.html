@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Feedback</title>
+    <link rel="icon" type="image/x-icon" href="../imgs/icon.ico">
+    <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+<header>
+    <nav class="sites">
+        <a class="hover-underline-animation-blue name" href="../index.html">Laurence Fishburne</a>
+        <a class="hover-underline-animation-red" href="Lebenslauf.html" target="Tab2">Lebenslauf</a>
+        <a class="hover-underline-animation-red" href="Kenntnisse.html" target="Tab2">Kenntnisse</a>
+        <a class="hover-underline-animation-red" href="Hobbies.html" target="Tab2">Hobbies</a>
+        <a class="hover-underline-animation-red" href="Kontakt.html" target="Tab2">Kontakt</a>
+        <a class="hover-underline-animation-red" href="Formular.html" target="Tab2">Formular</a>
+        <a class="hover-underline-animation-red" href="Feedback.html" target="Tab2">Feedback</a>
+    </nav>
+</header>
+
+<main>
+    <form class="feedback-form">
+        <label for="anrede">Anrede:</label>
+        <select id="anrede" name="anrede">
+            <option value="Herr">Herr</option>
+            <option value="Frau">Frau</option>
+            <option value="Dr.">Dr.</option>
+            <option value="Prof.">Prof.</option>
+        </select><br>
+
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="vorname" required autocomplete="on"><br>
+
+        <label for="nachname">Nachname:</label>
+        <input type="text" id="nachname" name="nachname" required autocomplete="on"><br>
+
+        <input type="checkbox" id="kopie" name="kopie">
+        <label for="kopie">Kopie an meine Mailbox senden</label><br>
+
+        <label for="email">Emailadresse:</label>
+        <input type="email" id="email" name="email" placeholder="Emailadresse eingeben" autocomplete="on"><br>
+
+        <input type="checkbox" id="rueckfragen" name="rueckfragen">
+        <label for="rueckfragen">Ich stehe für evtl. Rückfragen zur Verfügung.</label><br>
+
+        <label for="telefon">Telefonnummer:</label>
+        <input type="tel" id="telefon" name="telefon"><br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website"><br>
+
+        <label for="alter">Alter:</label>
+        <input type="number" id="alter" name="alter" min="18" max="99" value="21"><br>
+
+        <input type="checkbox" id="wiederbesuchen" name="wiederbesuchen">
+        <label for="wiederbesuchen">Ich werde die Seite wieder besuchen</label><br>
+
+        <label for="verbesserung">Was würden Sie verbessern?</label><br>
+        <textarea id="verbesserung" name="verbesserung" rows="4" cols="50"></textarea><br>
+
+        <label for="aufmerksamkeit">Wie sind Sie auf diese Bewerbungsseite aufmerksam geworden?</label>
+        <select id="aufmerksamkeit" name="aufmerksamkeit">
+            <optgroup label="Allgemein">
+                <option value="Zufall">Zufall</option>
+                <option value="Freunde/Bekannte">Freunde/Bekannte</option>
+                <option value="Präsentation/Vortrag">Präsentation/Vortrag</option>
+                <option value="Frühere Nutzung">Frühere Nutzung</option>
+            </optgroup>
+            <optgroup label="Internet-Angebote">
+                <option value="Newsletter">Newsletter anderer Seiten</option>
+                <option value="Suchmaschine">Suchmaschine</option>
+                <option value="Linkliste">Linkliste</option>
+                <option value="Forum/Gästebuch-Eintrag">Forum/Gästebuch-Eintrag</option>
+                <option value="Kostenlos/Gratis-Seite">Kostenlos/Gratis-Seite</option>
+            </optgroup>
+            <optgroup label="Medien">
+                <option value="Zeitung">Zeitung</option>
+                <option value="Zeitschrift">Zeitschrift</option>
+                <option value="Radio">Radio</option>
+                <option value="Fernsehen">Fernsehen</option>
+            </optgroup>
+        </select><br>
+
+        <label>Welche Note würdest du allgemein dem Inhalt geben?</label><br>
+        <input type="radio" id="note1" name="note_inhalt" value="1">
+        <label for="note1">1 (sehr gut)</label>
+        <input type="radio" id="note2" name="note_inhalt" value="2">
+        <label for="note2">2</label>
+        <input type="radio" id="note3" name="note_inhalt" value="3">
+        <label for="note3">3</label>
+        <input type="radio" id="note4" name="note_inhalt" value="4">
+        <label for="note4">4</label>
+        <input type="radio" id="note5" name="note_inhalt" value="5">
+        <label for="note5">5</label>
+        <input type="radio" id="note6" name="note_inhalt" value="6">
+        <label for="note6">6 (ungenügend)</label><br>
+
+        <label>Welche Note würdest du allgemein dem Aussehen geben?</label><br>
+        <input type="radio" id="note1_aussehen" name="note_aussehen" value="1">
+        <label for="note1_aussehen">1 (sehr gut)</label>
+        <input type="radio" id="note2_aussehen" name="note_aussehen" value="2">
+        <label for="note2_aussehen">2</label>
+        <input type="radio" id="note3_aussehen" name="note_aussehen" value="3">
+        <label for="note3_aussehen">3</label>
+        <input type="radio" id="note4_aussehen" name="note_aussehen" value="4">
+        <label for="note4_aussehen">4</label>
+        <input type="radio" id="note5_aussehen" name="note_aussehen" value="5">
+        <label for="note5_aussehen">5</label>
+        <input type="radio" id="note6_aussehen" name="note_aussehen" value="6">
+        <label for="note6_aussehen">6 (ungenügend)</label><br>
+
+        <label for="passwort">Passwort- / Spamschutz:</label>
+        <input type="password" id="passwort" name="passwort"><br>
+
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Zurücksetzen">
+    </form>
+</main>
+
+
+<footer>
+    <p>E-Mail: Laurence-Fishburne@gmail.com</p>
+    <p>Telefonnummer: 02509/007</p>
+    <p>Anschrift: Bahnhofstraße 10, 48007 Matrix</p>
+    <p>©LF</p>
+    <img src="../imgs/laurence.webp" alt="laurence" class="footer-img">
+</footer>
+
+</body>
+
+</html>

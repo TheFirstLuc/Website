@@ -3,6 +3,8 @@
     --blue: #0087ca;
     --dark-blue: #0040ca;
     --red: #ff2828;
+    --gray: #646464;
+    --dark-gray: #2d2d2d;
 }
 
 body {
@@ -184,4 +186,23 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: var(--dark-blue);
+}
+
+input[type="reset"] {
+    background-color: var(--gray);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dark-gray);
+}
+
+/*feedback*/
+.feedback-form > * {
+    margin: 5px;
 }
