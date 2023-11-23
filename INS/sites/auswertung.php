@@ -5,7 +5,17 @@ checkForRueckfragenError();
 @ratingInhalt();
 @ratingAussehen();
 getDatum();
-getName();
+$name = getName();
+
+function saveToXML($arr): void
+{
+    $xml = new SimpleXMLElement('<xml/>');
+
+    $track = $xml->addChild($arr);
+
+    Header('Content-type: text/xml');
+    print($xml->asXML());
+}
 
 function checkPassword(): void
 {
@@ -58,8 +68,10 @@ function getDatum(): void
     echo("<p>Ihre Feedbackwerte wurden am " . date("d.m.Y") . " um " . date("H:i") . " Uhr angenommen</p>");
 }
 
-function getName(): void
+function getName(): string
 {
     echo("<p>" . $_POST['vorname'] . "</p>");
+    return $_POST['vorname'];
 }
+
 ?>
