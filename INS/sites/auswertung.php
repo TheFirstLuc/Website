@@ -1,20 +1,50 @@
 <?php
 checkPassword();
+
+getName();
 checkForEmailError();
 checkForRueckfragenError();
 @ratingInhalt();
 @ratingAussehen();
 getDatum();
-$name = getName();
 
-function saveToXML($arr): void
+saveToXML();
+
+function saveToXML(): void
 {
-    $xml = new SimpleXMLElement('<xml/>');
+    //get filename
+    $filename = "../Feedbacks/Feedback" . date("d_m_Y") . "_" . date("H_i") . ".xml";
 
-    $track = $xml->addChild($arr);
+    // create a dom document with encoding utf8
+    $domtree = new DOMDocument('1.0', 'UTF-8');
 
-    Header('Content-type: text/xml');
-    print($xml->asXML());
+    // create the root element of the xml tree
+    $xmlRoot = $domtree->createElement("Feedback");
+
+    // loop through POST data
+    foreach ($_POST as $key => $value) {
+        // create an element for each POST key-value pair
+        $xmlElement = $domtree->createElement($key, $value);
+
+        // append the element to the root
+        $xmlRoot->appendChild($xmlElement);
+    }
+
+    //xml right indent / format
+    $domtree->formatOutput = true;
+
+    // append the root element to the document
+    $domtree->appendChild($xmlRoot);
+
+    // DTD Definition hinzufügen
+    $dtd = $domtree->createProcessingInstruction(
+        'xml-stylesheet',
+        'type="text/xml" href="Feedback.dtd"'
+    );
+    $domtree->insertBefore($dtd, $domtree->firstChild);
+
+    // save to xml file
+    $domtree->save($filename);
 }
 
 function checkPassword(): void
@@ -68,10 +98,23 @@ function getDatum(): void
     echo("<p>Ihre Feedbackwerte wurden am " . date("d.m.Y") . " um " . date("H:i") . " Uhr angenommen</p>");
 }
 
-function getName(): string
+function getName(): void
 {
-    echo("<p>" . $_POST['vorname'] . "</p>");
-    return $_POST['vorname'];
+    $anrede = $_POST['anrede'];
+    switch ($anrede) {
+        case 'Herr':
+            echo("<p> Sehr geehrter Herr " . $_POST['vorname'] . "</p>");
+            break;
+        case 'Frau':
+            echo("<p> Sehr geehrte Frau " . $_POST['vorname'] . "</p>");
+            break;
+        case 'Dr.':
+            echo("<p> Dr. " . $_POST['vorname'] . "</p>");
+            break;
+        case 'Prof.':
+            echo("<p> Prof. " . $_POST['vorname'] . "</p>");
+        break;
+    }
 }
 
 ?>

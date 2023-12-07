@@ -1,0 +1,17 @@
+<!DOCTYPE Feedback [
+        <!ELEMENT Feedback (anrede, vorname, nachname, kopie, email, rueckfragen, telefon, website, alter, verbesserung, aufmerksamkeit, note_inhalt, note_aussehen, passwort)>
+        <!ELEMENT anrede (#PCDATA)>
+        <!ELEMENT vorname (#PCDATA)>
+        <!ELEMENT nachname (#PCDATA)>
+        <!ELEMENT kopie (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT rueckfragen (#PCDATA)>
+        <!ELEMENT telefon (#PCDATA)>
+        <!ELEMENT website (#PCDATA)>
+        <!ELEMENT alter (#PCDATA)>
+        <!ELEMENT verbesserung (#PCDATA)>
+        <!ELEMENT aufmerksamkeit (#PCDATA)>
+        <!ELEMENT note_inhalt (#PCDATA)>
+        <!ELEMENT note_aussehen (#PCDATA)>
+        <!ELEMENT passwort (#PCDATA)>
+        ]>
