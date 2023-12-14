@@ -60,7 +60,7 @@
             background-color: white;
         }
 
-        tr:not(:first-child):nth-child(2n) td {
+        .red-table {
             color: red;
         }
     </style>
@@ -80,7 +80,10 @@
         $aussehen = (string) $feedback->bewertung['note_aussehen'];
         $inhalt = (string) $feedback->bewertung['note_inhalt'];
 
-        echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td>$aussehen / $inhalt</td></tr>";
+        if($aussehen >= 5 || $inhalt >= 5)
+            echo "<tr class='red-table'><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td>$aussehen / $inhalt</td></tr>";
+        else
+            echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td>$aussehen / $inhalt</td></tr>";
     }
 
     echo '</table>';
