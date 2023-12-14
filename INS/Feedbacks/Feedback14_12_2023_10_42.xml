@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xml" href="Feedback.dtd"?>
+<Feedback>
+  <anrede>Herr</anrede>
+  <vorname>Luc</vorname>
+  <nachname>Froning</nachname>
+  <kopie>on</kopie>
+  <email>thefirstluc@gmail.com</email>
+  <telefon/>
+  <website/>
+  <alter>21</alter>
+  <wiederbesuchen>on</wiederbesuchen>
+  <verbesserung/>
+  <aufmerksamkeit>Zufall</aufmerksamkeit>
+  <note_inhalt>2</note_inhalt>
+  <note_aussehen>5</note_aussehen>
+  <passwort>Internetsprachen</passwort>
+</Feedback>

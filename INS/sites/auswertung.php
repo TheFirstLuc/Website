@@ -3,7 +3,7 @@ checkPassword();
 
 getName();
 checkForEmailError();
-checkForRueckfragenError();
+//checkForRueckfragenError(); WIP
 @ratingInhalt();
 @ratingAussehen();
 getDatum();
@@ -65,7 +65,7 @@ function checkForEmailError(): void
 
 function checkForRueckfragenError(): void
 {
-    if (!(isset($_POST['rueckfragen']) && (($_POST['telefon'] != "") || ($_POST['website'] != "")))) {
+    if (!(isset($_POST['rueckfragen']) && (($_POST['telefon'] != "") ))) {
         echo("<p>Error: Data provided but not Rückfragen selected</p>");
         exit();
     }

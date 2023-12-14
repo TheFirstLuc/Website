@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feedbackdatenbank>
+  <feedback>
+    <besucher anrede="Herr" nachname="Froning" vorname="Luc">
+      <alter>21</alter>
+      <kontakt rueckfrage_erlaubt="">
+        <emailadresse>thefirstluc@gmail.com</emailadresse>
+        <website/>
+        <telefonnummer/>
+      </kontakt>
+    </besucher>
+    <bewertung erneuter_besuch="" note_aussehen="4" note_inhalt="3">
+      <vorschlag/>
+    </bewertung>
+    <info>
+      <email-gesendet>on</email-gesendet>
+    </info>
+  </feedback>
+  <feedback>
+    <besucher anrede="Herr" nachname="Froning" vorname="Luc">
+      <alter>21</alter>
+      <kontakt rueckfrage_erlaubt="">
+        <emailadresse>thefirstluc@gmail.com</emailadresse>
+        <website/>
+        <telefonnummer/>
+      </kontakt>
+    </besucher>
+    <bewertung erneuter_besuch="on" note_aussehen="" note_inhalt="">
+      <vorschlag/>
+    </bewertung>
+    <info>
+      <email-gesendet>on</email-gesendet>
+    </info>
+  </feedback>
+  <feedback>
+    <besucher anrede="Herr" nachname="Froning" vorname="Luc">
+      <alter>21</alter>
+      <kontakt rueckfrage_erlaubt="">
+        <emailadresse>thefirstluc@gmail.com</emailadresse>
+        <website/>
+        <telefonnummer/>
+      </kontakt>
+    </besucher>
+    <bewertung erneuter_besuch="" note_aussehen="1" note_inhalt="1">
+      <vorschlag/>
+    </bewertung>
+    <info>
+      <email-gesendet>on</email-gesendet>
+    </info>
+  </feedback>
+  <feedback>
+    <besucher anrede="Herr" nachname="Froning" vorname="Luc">
+      <alter>21</alter>
+      <kontakt rueckfrage_erlaubt="">
+        <emailadresse>thefirstluc@gmail.com</emailadresse>
+        <website/>
+        <telefonnummer/>
+      </kontakt>
+    </besucher>
+    <bewertung erneuter_besuch="" note_aussehen="1" note_inhalt="1">
+      <vorschlag/>
+    </bewertung>
+    <info>
+      <email-gesendet>on</email-gesendet>
+    </info>
+  </feedback>
+  <feedback>
+    <besucher anrede="Herr" nachname="Froning" vorname="Luc">
+      <alter>21</alter>
+      <kontakt rueckfrage_erlaubt="">
+        <emailadresse>thefirstluc@gmail.com</emailadresse>
+        <website/>
+        <telefonnummer/>
+      </kontakt>
+    </besucher>
+    <bewertung erneuter_besuch="on" note_aussehen="2" note_inhalt="5">
+      <vorschlag/>
+    </bewertung>
+    <info>
+      <email-gesendet>on</email-gesendet>
+    </info>
+  </feedback>
+  <feedback>
+    <besucher anrede="Herr" nachname="Froning" vorname="Luc">
+      <alter>21</alter>
+      <kontakt rueckfrage_erlaubt="">
+        <emailadresse>thefirstluc@gmail.com</emailadresse>
+        <website/>
+        <telefonnummer/>
+      </kontakt>
+    </besucher>
+    <bewertung erneuter_besuch="on" note_aussehen="5" note_inhalt="2">
+      <vorschlag/>
+    </bewertung>
+    <info>
+      <email-gesendet>on</email-gesendet>
+    </info>
+  </feedback>
+</feedbackdatenbank>
