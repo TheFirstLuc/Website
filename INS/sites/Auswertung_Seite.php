@@ -63,6 +63,10 @@
         .red-table {
             color: red;
         }
+        
+        .green-table{
+            color: green;
+        }
     </style>
 </head>
 <body>';
@@ -81,9 +85,9 @@
         $inhalt = (string) $feedback->bewertung['note_inhalt'];
 
         if($aussehen >= 5 || $inhalt >= 5)
-            echo "<tr class='red-table'><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td>$aussehen / $inhalt</td></tr>";
+            echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td class='red-table'>$aussehen / $inhalt</td></tr>";
         else
-            echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td>$aussehen / $inhalt</td></tr>";
+            echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td class='green-table'>$aussehen / $inhalt</td></tr>";
     }
 
     echo '</table>';
