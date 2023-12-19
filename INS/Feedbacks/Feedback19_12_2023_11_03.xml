@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xml" href="Feedback.dtd"?>
 <Feedback>
   <anrede>Herr</anrede>
-  <vorname>Luc New</vorname>
+  <vorname>Luc1</vorname>
   <nachname>Froning</nachname>
   <kopie>on</kopie>
   <email>thefirstluc@gmail.com</email>
@@ -10,10 +10,11 @@
   <telefon>01705805111</telefon>
   <website/>
   <alter>21</alter>
+  <wiederbesuchen>on</wiederbesuchen>
   <verbesserung/>
   <aufmerksamkeit>Zufall</aufmerksamkeit>
-  <note_inhalt>3</note_inhalt>
+  <note_inhalt>6</note_inhalt>
   <note_aussehen>2</note_aussehen>
   <passwort>Internetsprachen</passwort>
-  <datum>19.12.2023_10:31</datum>
+  <datum>19.12.2023_11:03</datum>
 </Feedback>

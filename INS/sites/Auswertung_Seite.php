@@ -73,7 +73,7 @@
 
     echo '<table>';
     echo '<tr><th colspan="6">Alle Feedbacks</th></tr>';
-    echo '<tr><th>Anrede</th><th>Nachname</th><th>Vorname</th><th>Alter</th><th>Email</th><th>Bewertung</th></tr>';
+    echo '<tr><th>Anrede</th><th>Nachname</th><th>Vorname</th><th>Alter</th><th>Email</th><th>Bewertung (Aussehen / Inhalt)</th></tr>';
 
     foreach ($xml->feedback as $feedback) {
         $anrede = (string) $feedback->besucher['anrede'];
@@ -84,7 +84,7 @@
         $aussehen = (string) $feedback->bewertung['note_aussehen'];
         $inhalt = (string) $feedback->bewertung['note_inhalt'];
 
-        if($aussehen >= 5 || $inhalt >= 5)
+        if($aussehen >= 5 || $inhalt == 'mangelhaft' || $inhalt == 'ungenuegend')
             echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td class='red-table'>$aussehen / $inhalt</td></tr>";
         else
             echo "<tr><td>$anrede</td><td>$nachname</td><td>$vorname</td><td>$alter</td><td>$email</td><td class='green-table'>$aussehen / $inhalt</td></tr>";
