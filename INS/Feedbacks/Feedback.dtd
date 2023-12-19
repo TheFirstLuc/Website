@@ -14,4 +14,5 @@
         <!ELEMENT note_inhalt (#PCDATA)>
         <!ELEMENT note_aussehen (#PCDATA)>
         <!ELEMENT passwort (#PCDATA)>
+        <!ELEMENT datum (#PCDATA)>
         ]>

@@ -30,6 +30,9 @@ function saveToXML(): void
         $xmlRoot->appendChild($xmlElement);
     }
 
+    //xml add time
+    $xmlRoot -> appendChild($domtree->createElement("datum", date("d.m.Y") . "_". date("H:i")));
+
     //xml right indent / format
     $domtree->formatOutput = true;
 
