@@ -3,7 +3,7 @@ checkPassword();
 
 getName();
 checkForEmailError();
-//checkForRueckfragenError(); WIP
+//checkForRueckfragenError(); //WIP
 @ratingInhalt();
 @ratingAussehen();
 getDatum();
@@ -66,18 +66,32 @@ function checkForEmailError(): void
     }
 }
 
+//function checkForRueckfragenError(): void
+//{
+//    if (!(isset($_POST['rueckfragen']) && (!empty($_POST['telefon']) || !empty($_POST['website']) ))) {
+//        echo("<p>Error: Data provided but not Rückfragen selected</p>");
+//        exit();
+//    }
+//
+//    if (empty($_POST['telefon']) && empty($_POST['website']) && empty($_POST['email'])) {
+//        echo("<p>Error: Rückfragen selected but no data provided</p>");
+//        exit();
+//    }
+//}
+
 function checkForRueckfragenError(): void
 {
-    if (!(isset($_POST['rueckfragen']) && (($_POST['telefon'] != "") ))) {
+    if (!(isset($_POST['rueckfragen']) && ( (!empty($_POST['telefon'] && $_POST['telefon'] != '')) || (!empty($_POST['website'])  && $_POST['website'] != '')))) {
         echo("<p>Error: Data provided but not Rückfragen selected</p>");
         exit();
     }
 
-    if (empty($_POST['email']) && empty($_POST['telefon']) && empty($_POST['website'])) {
+    if (empty($_POST['telefon']) && empty($_POST['website']) && $_POST['telefon'] == '' && $_POST['website'] == '' && empty($_POST['email'])  && $_POST['email'] == '') {
         echo("<p>Error: Rückfragen selected but no data provided</p>");
         exit();
     }
 }
+
 
 # rating Inhalt
 function ratingInhalt(): void
